@@ -131,12 +131,15 @@ Long short-term memory (LSTM) is a neural network (form of AI) which ingests inf
 
 \section{Datasets}
 
-This project utilizes yfinance, a Python module which downloads the historical prices of a cryptocurrency from the first day of its inception to whichever day the program is executed. For example, the Yahoo Finance page for EOS-USD is the source for Figure 1 \cite{c-4}. Figure 1 shows the historical data on a line graph when the program receives EOS-USD as an input.
+This project utilizes yfinance, a Python module which downloads the historical prices of a cryptocurrency from the first day of its inception to whichever day the program is executed. For example, the Yahoo Finance page for EOS-USD is the source for Figure 1 \cite{c-4}. Figure \ref{fig:eos-price} shows the historical data on a line graph when the program receives EOS-USD as an input.
 
 \TODO{jp}{image must be in images dir in latex}
-![Figure 1](https://github.com/cybertraining-dsc/su21-reu-361/raw/main/project/images/eos-price.png)
 
-**Figure 1:** Line graph of EOS price from 1 July 2017 to 22 July 2021. Generated using yfinance-lstm.ipynb \cite{c-13} located in project/code, utilizing price data from Yahoo Finance \cite{c-4}.
+\begin{figure}[htb]
+\includegraphics{images/eos-price.png}
+\caption{Line graph of EOS price from 1 July 2017 to 22 July 2021. Generated using yfinance-lstm.ipynb \cite{c-13} located in project/code, utilizing price data from Yahoo Finance \cite{c-4}}.
+\label{fig:eos-price}
+\end{figure}
 
 \section{Architecture}
 
